@@ -10,7 +10,6 @@ def lambda_handler(event, context):
     # Entrada (json)
     body = event.get('body')
     if isinstance(body, str):
-        import json
         body = json.loads(body)
 
     tenant_id = body['tenant_id']
